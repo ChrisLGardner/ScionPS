@@ -187,6 +187,16 @@ InModuleScope ScionPS {
 
         Context "String/Int Constructor" {
 
+            $SourceData = Import-PowerShellDataFile -Path "$PSScriptRoot\TestData\Attributes\HashtableOfAttributes.psd1"
+
+            foreach ($Attribute in $SourceData.Attributes.Keys) {
+                It "Should correctly set values for Name and Dots to $($Attribute) and $($SourceData.Attributes[$Attribute]) when passed a string/int combination" {
+                    $Sut = [Attribute]::New($Attribute,$SourceData.Attributes[$Attribute])
+
+                    $Sut.Name | Should -Be $Attribute
+                    $Sut.Dots | Should -Be $SourceData.Attributes[$Attribute]
+                }
+            }
         }
 
 

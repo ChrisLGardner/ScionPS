@@ -32,43 +32,43 @@ class Attribute {
 
         switch ($Attribute) {
             'Intellect' {
-                [Approach]::Power
+                $this.Approach = [Approach]::Power
                 Continue
             }
             'Cunning' {
-                [Approach]::Finesse
+                $this.Approach = [Approach]::Finesse
                 Continue
             }
             'Resolve' {
-                [Approach]::Resistance
+                $this.Approach = [Approach]::Resistance
                 Continue
             }
             'Might' {
-                [Approach]::Power
+                $this.Approach = [Approach]::Power
                 Continue
             }
             'Dexterity' {
-                [Approach]::Finesse
+                $this.Approach = [Approach]::Finesse
                 Continue
             }
             'Stamina' {
-                [Approach]::Resistance
+                $this.Approach = [Approach]::Resistance
                 Continue
             }
             'Presence' {
-                [Approach]::Power
+                $this.Approach = [Approach]::Power
                 Continue
             }
             'Manipulation' {
-                [Approach]::Finesse
+                $this.Approach = [Approach]::Finesse
                 Continue
             }
             'Composure' {
-                [Approach]::Resistance
+                $this.Approach = [Approach]::Resistance
                 Continue
             }
             Default {
-                [Approach]::Power
+                $this.Approach = [Approach]::Power
             }
         }
     }
@@ -77,43 +77,43 @@ class Attribute {
 
         switch ($Attribute) {
             'Intellect' {
-                [Arena]::Mental
+                $this.Arena = [Arena]::Mental
                 Continue
             }
             'Cunning' {
-                [Arena]::Mental
+                $this.Arena = [Arena]::Mental
                 Continue
             }
             'Resolve' {
-                [Arena]::Mental
+                $this.Arena = [Arena]::Mental
                 Continue
             }
             'Might' {
-                [Arena]::Physical
+                $this.Arena = [Arena]::Physical
                 Continue
             }
             'Dexterity' {
-                [Arena]::Physical
+                $this.Arena = [Arena]::Physical
                 Continue
             }
             'Stamina' {
-                [Arena]::Physical
+                $this.Arena = [Arena]::Physical
                 Continue
             }
             'Presence' {
-                [Arena]::Social
+                $this.Arena = [Arena]::Social
                 Continue
             }
             'Manipulation' {
-                [Arena]::Social
+                $this.Arena = [Arena]::Social
                 Continue
             }
             'Composure' {
-                [Arena]::Social
+                $this.Arena = [Arena]::Social
                 Continue
             }
             Default {
-                [Arena]::Mental
+                $this.Arena = [Arena]::Mental
             }
         }
     }
